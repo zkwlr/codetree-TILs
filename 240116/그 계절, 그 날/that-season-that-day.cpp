@@ -5,11 +5,11 @@ using namespace std;
 
 
 string checkDay(int y, int m, int d, vector<vector <int>> calender){
-    if (y%400 == 0) calender[1].push_back(0);
+    if (y%400 == 0) calender[1].push_back(1);
     else if (y%100 == 0) {}
-    else if (y%4 == 0) calender[1].push_back(0);
+    else if (y%4 == 0) calender[1].push_back(1);
 
-    if (calender[m-1][d-1] != 0) {
+    if (calender[m-1].size() < d) {
         return "-1";
     }
     else {
@@ -27,8 +27,8 @@ string checkDay(int y, int m, int d, vector<vector <int>> calender){
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    vector<int> jan(31), fab(28), mar(31), apr(30), may(31), jun(30)
-    ,jul(31), aug(31), sep(30), oct(31), nov(30), dec(31);
+    vector<int> jan(31,1), fab(28,1), mar(31,1), apr(30,1), may(31,1), jun(30,1)
+    ,jul(31,1), aug(31,1), sep(30,1), oct(31,1), nov(30,1), dec(31,1);
     vector<vector<int>> calender;
     calender.push_back(jan);
     calender.push_back(fab);
