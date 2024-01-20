@@ -5,3 +5,9 @@
 
 # ignore .dSYM files
 *.dSYM/*
+
+# ignore no extension
+*
+
+# unignore extensions
+!*.*
