@@ -1,4 +1,4 @@
 # ignore .exe
 *.exe
-# ignore .vscode folder
-.vscode/*
+# ignore .json files
+*.json
