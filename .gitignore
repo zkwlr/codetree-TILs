@@ -2,3 +2,6 @@
 *.exe
 # ignore .json files
 .vscode/*
+
+# ignore .dSYM files
+*.dSYM/*
