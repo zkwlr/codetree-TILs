@@ -1,3 +1,9 @@
+# ignore no extension
+*
+
+# unignore extensions
+!*.*
+
 # ignore .exe
 *.exe
 # ignore .json files
@@ -6,8 +12,3 @@
 # ignore .dSYM files
 *.dSYM/*
 
-# ignore no extension
-*
-
-# unignore extensions
-!*.*
