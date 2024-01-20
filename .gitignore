@@ -12,6 +12,5 @@
 # ignore .dSYM files
 *.dSYM/*
 
-# unignore .cpp, .md
-!*.cpp
-!*.md
+# unignore debug files
+!debug/
