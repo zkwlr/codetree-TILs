@@ -1,2 +1,4 @@
 # ignore .exe
 *.exe
+# ignore .vscode
+.vscode
