@@ -10,7 +10,7 @@ void notation(const int a, const int b, int n)
     while (1)
     {
         todec += (n % 10) * pow(a, k); // 자릿수 마다 a진법이면 a^k승씩 곱해서 계산
-        n = n / a;
+        n = n / 10; // 다음 자리수
         if (n == 0)
             break; // 끝 자릿수에 왔으므로 중지
         k++;
