@@ -18,17 +18,14 @@ int main()
     {
         if (arr[i] <= t)
         {
-            if (ans < count)
-            { // 지금까지 최장 부분수열 길이보다 count가 크면 교체
-                ans = count;
-            }
             count = 0; // 수열 길이 초기화
         }
         else
-            count++;
+            count++; // 최장 수열 이어나감
+        
+        ans = max(ans, count); // 각 반복마다 현재 최장 수열이 저장된 답보다 더 커지면 교체
+
     }
-    if (ans < count)
-        ans = count;
 
     cout << ans;
     return 0;
