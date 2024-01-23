@@ -7,8 +7,8 @@ int main()
     // 여기에 코드를 작성해주세요.
     int n;
     cin >> n;
-    int index = 100;    // 초기 타일 위치
-    int arr[200] = {0}; // 회색 : 0, 흰색 : -1, 검은색 : 1
+    int index = 1000;    // 초기 타일 위치
+    int arr[2000] = {0}; // 회색 : 0, 흰색 : -1, 검은색 : 1
 
     while (n--)
     {
@@ -36,7 +36,7 @@ int main()
 
     int white = 0;
     int black = 0;
-    for (int i = 0; i < 200; i++)
+    for (int i = 0; i < 2000; i++)
     {
         if (arr[i] == -1)
             white++;
